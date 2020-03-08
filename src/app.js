@@ -4,16 +4,16 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
-const morgan = require('morgan');
+// const morgan = require('morgan');
 
 const app = express()
 const port = process.env.PORT || 3000
 
-// Setup logging in command-line
-app.use(morgan('short'));
-// Write logs to file
-const accessLogStream = fs.createWriteStream('../access.log', {flags: 'a'});
-app.use(morgan('short', {stream: accessLogStream}));
+// // Setup logging in command-line
+// app.use(morgan('short'));
+// // Write logs to file
+// const accessLogStream = fs.createWriteStream('../access.log', {flags: 'a'});
+// app.use(morgan('short', {stream: accessLogStream}));
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
