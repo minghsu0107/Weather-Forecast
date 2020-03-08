@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000
 // Setup logging in command-line
 app.use(morgan('short'));
 // Write logs to file
-const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'});
+const accessLogStream = fs.createWriteStream('../access.log', {flags: 'a'});
 app.use(morgan('short', {stream: accessLogStream}));
 
 // Define paths for Express config
