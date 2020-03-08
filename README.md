@@ -4,4 +4,3 @@ This application tells you the current weather of a certain place with the help 
 ```
 npm run start
 ```
-Then visit port 3000 with your web browser.
