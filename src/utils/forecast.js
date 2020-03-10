@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, location) => {
                 resolve({
                     forecastData: body.daily.data[0].summary + ' It is currently ' + 
                         body.currently.temperature + '℉. There is a ' + 
-                        body.currently.precipProbability + '% chance of rain.',
+                        Number(body.currently.precipProbability) * 100 + '% chance of rain.',
                     location: location
                 })
             }
