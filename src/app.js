@@ -1,5 +1,5 @@
 const path = require('path')
-const fs = require('fs');
+const fs = require('fs')
 const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
